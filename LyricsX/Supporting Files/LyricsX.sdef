@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<!--
+    This file is part of LyricsX
+    Copyright (C) 2019  datasone
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<dictionary title="LyricsX">
+    <suite name="Scriptable Player" code="ScPl" description="Scriptable player tasks.">
+        <command name="setTrack" code="setTrack" description="Set current player track.">
+            <cocoa class="LyricsX.SetPlayerTrackCommand" />
+            
+            <parameter name="title" code="TiTl" type="text" description="Track title.">
+                <cocoa key="TrackTitle" />
+            </parameter>
+            
+            <parameter name="album" code="AlBm" type="text" description="Track album.">
+                <cocoa key="TrackAlbum" />
+            </parameter>
+            
+            <parameter name="artist" code="ATst" type="text" description="Track artist.">
+                <cocoa key="TrackArtist" />
+            </parameter>
+            
+            <parameter name="url" code="fURL" type="text" description="The track's corresponding file path">
+                <cocoa key="URL" />
+            </parameter>
+            
+            <parameter name="duration" code="DRaN" type="real" description="Track duration (in seconds).">
+                <cocoa key="TrackDuration" />
+            </parameter>
+        </command>
+        
+        <command name="setState" code="setState" description="Set current player state.">
+            <cocoa class="LyricsX.SetPlayerState" />
+            
+            <parameter name="isPlaying" code="iPly" type="boolean" description="If player is playing or in paused(stopped) state.">
+                <cocoa key="IsPlaying" />
+            </parameter>
+            
+            <parameter name="position" code="PSiT" type="real" description="Set current track position (in seconds).">
+                <cocoa key="Position" />
+            </parameter>
+        </command>
+    </suite>
+</dictionary>

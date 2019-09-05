@@ -30,6 +30,7 @@ extension MusicPlayerName {
         case 1: self = .spotify
         case 2: self = .vox
         case 3: self = .audirvana
+        case 4: self = .asplayer
         default: return nil
         }
     }
@@ -39,7 +40,8 @@ extension MusicPlayerName {
         case .itunes:   return #imageLiteral(resourceName: "iTunes_icon")
         case .spotify:  return #imageLiteral(resourceName: "spotify_icon")
         case .vox:      return #imageLiteral(resourceName: "vox_icon")
-        case .audirvana: return #imageLiteral(resourceName: "audirvana_icon")
+        case .audirvana:return #imageLiteral(resourceName: "audirvana_icon")
+        case .asplayer: return #imageLiteral(resourceName: "audirvana_icon")
         }
     }
 }

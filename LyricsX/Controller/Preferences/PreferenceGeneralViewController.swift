@@ -29,6 +29,7 @@ class PreferenceGeneralViewController: NSViewController {
     @IBOutlet weak var preferSpotify: NSButton!
     @IBOutlet weak var preferVox: NSButton!
     @IBOutlet weak var preferAudirvana: NSButton!
+    @IBOutlet weak var preferASPlayer: NSButton!
     
     @IBOutlet weak var autoLaunchButton: NSButton!
     
@@ -53,6 +54,8 @@ class PreferenceGeneralViewController: NSViewController {
         case 3:
             preferAudirvana.state = .on
             loadHomonymLrcButton.isEnabled = false
+        case 4:
+            preferASPlayer.state = .on
         default:
             preferAuto.state = .on
             autoLaunchButton.isEnabled = false
