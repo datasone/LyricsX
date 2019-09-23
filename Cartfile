@@ -1,4 +1,4 @@
-github "ddddxxx/LyricsProvider" == 0.7.0
+github "ddddxxx/LyricsProvider" == 0.7.1
 
 github "datasone/MusicPlayer" "master"
 
@@ -8,7 +8,7 @@ github "ddddxxx/Semver"
 
 github "ddddxxx/SwiftyOpenCC"
 
-github "ddddxxx/TouchBarHelper"
+github "ddddxxx/DFRPrivate"
 
 github "ddddxxx/DFRPrivate"
 
